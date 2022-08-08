@@ -7,7 +7,7 @@ public class Assignment1 {
         int y=myObj.nextInt();
         int z=myObj.nextInt();
         int n=myObj.nextInt();
-        int min=Math.min(Math.abs(x-n),Math.min(Math.abs(y-n),Math.abs(z-n)));
+        int minimumOfAll=Math.min(Math.abs(x-n),Math.min(Math.abs(y-n),Math.abs(z-n)));
         if(x>=n && min==Math.abs(n-x))
             System.out.println("L1");
         else if(y>=n && min==Math.abs(n-x))
