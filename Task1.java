@@ -19,17 +19,17 @@ public class Task1 {
         Scanner myObj = new Scanner(System.in);
         int noOfRows=myObj.nextInt();
         int noOfCol=myObj.nextInt();
-        int indexToFind1=myObj.nextInt();
-        int indexToFind2=myObj.nextInt();
+        int rowindex=myObj.nextInt();
+        int colindex=myObj.nextInt();
         String isMango="no";
         for(int i=1;i<=noOfRows;i++) {
-            if(indexToFind1==i && indexToFind2==1)
+            if(rowindex==i && colindex==1)
                 isMango="yes";
-            if(indexToFind1==i && indexToFind2==noOfCol)
+            if(rowindex==i && colindex==noOfCol)
                 isMango="yes";
         }
         for(int i=1;i<=noOfCol;i++) {
-            if(indexToFind1==1 && indexToFind2==i)
+            if(rowindex==1 && colindex==i)
                 isMango="yes";
         }
         System.out.println(isMango);
