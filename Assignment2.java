@@ -23,7 +23,7 @@ public class Assignment2 {
                weeksalary+=extrahours*100+extrahours*15+800;
             }
         }
-        weeksalary+=weekdays[0]*125;
+        weeksalary+=weekdays[6]*125;
         weeksalary+=weekdays[0]*150;
         if(totalhours>40){
             int extrahours=totalhours-40;
