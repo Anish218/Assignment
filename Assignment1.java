@@ -1,10 +1,11 @@
 public class Assignment1 {
     public static void main(String []args)
     {
-        int x=30;
-        int y=40;
-        int z=20;
-        int n=25;
+        Scanner myObj = new Scanner(System.in);
+        int x=myObj.nextInt();
+        int y=myObj.nextInt();
+        int z=myObj.nextInt();
+        int n=myObj.nextInt();
         int min=Math.min(Math.abs(x-n),Math.min(Math.abs(y-n),Math.abs(z-n)));
         if(x>=n && min==Math.abs(n-x))
             System.out.println("L1");
