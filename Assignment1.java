@@ -14,6 +14,6 @@ public class Assignment1 {
         else if(z>=n && min==Math.abs(n-x))
             System.out.println("L3");
         else
-            System.out.println("no anyone");
+            System.out.println("no room will allocate");
     }
 }
