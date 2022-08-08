@@ -10,12 +10,8 @@ public class Assignment3 {
         for(int i=0;i<lines;i++)
         {
             int j=0;
-            for( j=0;j<=i;j++)
-                System.out.print(firstNo);
-            for( int k=j;k<lines+1;k++)
-            {
-                System.out.print(secondNo);
-            }
+            for( j=0;j<=i;j++) System.out.print(firstNo);
+            for( int k=j;k<lines+1;k++) System.out.print(secondNo);
             System.out.println();
         }
 
