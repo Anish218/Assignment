@@ -8,11 +8,11 @@ public class Assignment1 {
         int z=myObj.nextInt();
         int n=myObj.nextInt();
         int minimumOfAll=Math.min(Math.abs(x-n),Math.min(Math.abs(y-n),Math.abs(z-n)));
-        if(x>=n && min==Math.abs(n-x))
+        if(x>=n && minimumOfAll==Math.abs(n-x))
             System.out.println("L1");
-        else if(y>=n  && min==Math.abs(n-y))
+        else if(y>=n  && minimumOfAll==Math.abs(n-y))
             System.out.println("L2");
-        else if(z>=n && min==Math.abs(n-z))
+        else if(z>=n && minimumOfAll==Math.abs(n-z))
             System.out.println("L3");
         else
             System.out.println("no room will allocate");
