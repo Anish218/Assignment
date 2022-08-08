@@ -25,7 +25,7 @@ public class Task1 {
         for(int i=1;i<=noOfRows;i++) {
             if(rowindex==i && colindex==1)
                 isMango="yes";
-            if(rowindex==i && colindex==noOfCol)
+            else if(rowindex==i && colindex==noOfCol)
                 isMango="yes";
         }
         for(int i=1;i<=noOfCol;i++) {
