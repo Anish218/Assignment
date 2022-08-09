@@ -15,17 +15,17 @@ public class ArrayOperation {
             mean+=elements[i];
 
         }
-        mean/=sizeofarray;
-        System.out.println("Mean of the array is "+ mean);
+        double meanvalue=(double)mean/sizeofarray;
+        System.out.println("Mean of the array is "+ meanvalue);
         Arrays.sort(elements);
         if((sizeofarray | 1)==sizeofarray+1)
         {
             int sumOfMiddleElements = elements[sizeofarray / 2] +
                     elements[sizeofarray / 2 - 1];
-            System.out.println("medain of array is "+ (double)sumOfMiddleElements/2);
+            System.out.println("medain of array is "+ sumOfMiddleElements/2);
         }
         else
-            System.out.println("median of array is "+ (double)(elements[sizeofarray/2]));
+            System.out.println("median of array is "+ (elements[sizeofarray/2]));
             int maximumcount=0;
             int indexmaximumelement=0;
         for(int i=0;i<count.length;i++)
