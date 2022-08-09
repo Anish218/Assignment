@@ -222,14 +222,20 @@ public class StudentsReport {
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
         Student arrayOfStudents[];
-        arrayOfStudents=new Student[2];
-        for(int i=0;i<2;i++)
+        arrayOfStudents=new Student[15];
+        for(int i=0;i<15;i++)
         {
+            System.out.println("Enter Student name");
             String name=input.next();
+            System.out.println("Enter Maths marks");
             int  maths=input.nextInt();
+            System.out.println("Enter Computer Science marks");
             int computerScience=input.nextInt();
+            System.out.println("Enter English marks");
             int english=input.nextInt();
+            System.out.println("Enter Science marks");
             int science=input.nextInt();
+            System.out.println("Enter Social Science marks");
             int socialScience=input.nextInt();
             int subjects[]={maths,computerScience,english,science,socialScience};
             Student student=new Student(name,subjects);
