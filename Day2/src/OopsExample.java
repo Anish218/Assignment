@@ -8,6 +8,10 @@ class Holiday {
         this.month=month;
         this.name=name;
     }
+    public boolean inSameMonth(String month1,String month2)
+    {
+        return (month1.equals(month2));
+    }
 
 
 }
