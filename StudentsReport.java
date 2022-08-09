@@ -50,6 +50,16 @@ class Student
 //        }
 //        }
 //    }
+    static void totalOfEachOfThem(Student students[])
+    {
+        System.out.println("NAME"+"    "+"TOTAL");
+        for(int i=0;i<students.length;i++)
+        {
+            System.out.println(students[i].name+"    "+students[i].totalMarks);
+        }
+    }
+
+}
 
 
 
@@ -71,6 +81,8 @@ public class StudentsReport {
             arrayOfStudents[i]=student;
         }
 //        Student.rankThemAll(arrayOfStudents);
+        Student.totalOfEachOfThem(arrayOfStudents);
+
 
     }
 }
