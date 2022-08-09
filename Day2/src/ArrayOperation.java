@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ArrayOperation {
@@ -14,5 +15,15 @@ public class ArrayOperation {
         }
         mean/=sizeofarray;
         System.out.println("Mean of the array is "+ mean);
+        Arrays.sort(elements);
+        if((sizeofarray | 1)==sizeofarray+1)
+        {
+            int sumOfMiddleElements = elements[sizeofarray / 2] +
+                    elements[sizeofarray / 2 - 1];
+            System.out.println("medain of array is "+ (double)sumOfMiddleElements/2);
+        }
+        else
+            System.out.println("median of array is "+ (double)(elements[sizeofarray/2]));
+
     }
 }
