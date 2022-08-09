@@ -15,7 +15,9 @@ Class Teacher of X-A wants to calculate the total of each of her 15 students and
  */
 
 import java.util.Arrays;
+import java.util.Map;
 import java.util.Scanner;
+import java.util.TreeMap;
 
 class Student
 {
@@ -34,15 +36,29 @@ class Student
         this.totalMarks=total;
 
     }
+    static void rankThemAll(Student  students[])
+    {
+        System.out.println("NAME"+"    "+"RANK");
+        TreeMap<Integer,String> sortedStudentTotalMarks=new TreeMap<Integer,String>();
+        for(int i=0;i<students.length;i++)
+        {
+            sortedStudentTotalMarks.put(students[i].totalMarks,students[i].name);
+        }
+        int rank=1;
+        for(Map.Entry m:sortedStudentTotalMarks.entrySet()) {
+            System.out.println(m.getValue()+"    "+(rank++));
+        }
+        }
+    }
 
 
-}
+
 public class StudentsReport {
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
         Student arrayOfStudents[];
-        arrayOfStudents=new Student[15];
-        for(int i=0;i<15;i++)
+        arrayOfStudents=new Student[2];
+        for(int i=0;i<2;i++)
         {
             String name=input.next();
             int  maths=input.nextInt();
@@ -54,6 +70,7 @@ public class StudentsReport {
             Student student=new Student(name,subjects);
             arrayOfStudents[i]=student;
         }
+        Student.rankThemAll(arrayOfStudents);
 
     }
 }
